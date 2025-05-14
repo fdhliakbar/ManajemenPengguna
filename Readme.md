@@ -55,6 +55,30 @@ user-management-app/
 
 ```
 
+## 📘 Dokumentasi API
+
+````json
+Semua endpoint tersedia di `http://localhost:3000/api/users`
+
+| Metode | Endpoint         | Deskripsi               | Body (JSON)         |
+|--------|------------------|-------------------------|---------------------|
+| GET    | /api/users       | Ambil semua pengguna    | -                   |
+| POST   | /api/users       | Tambah pengguna baru    | { "name": "", ... } |
+| GET    | /api/users/:id   | Ambil pengguna spesifik | -                   |
+| PUT    | /api/users/:id   | Update data pengguna    | { "name": "", ... } |
+| DELETE | /api/users/:id   | Hapus pengguna          | -                   |
+
+Contoh request untuk menambah pengguna:
+
+```json
+POST /api/users
+{
+  "name": "Jane Doe",
+  "email": "jane@example.com",
+  "role": "admin"
+}
+````
+
 ## 💡 Catatan
 
 Aplikasi ini cocok untuk pembelajaran fullstack dasar.
