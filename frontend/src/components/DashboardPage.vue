@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Dashboard</h1>
-    <p>Selamat datang di halaman dashboard!</p>
+    <p>Selamat datang! Anda berhasil login.</p>
   </div>
 </template>
 
